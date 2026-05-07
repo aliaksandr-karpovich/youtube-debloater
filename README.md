@@ -1,4 +1,4 @@
-# YouTube Subscriptions Cleaner
+# YouTube Debloater
 
 A Chrome extension that declutters YouTube by hiding things you probably don't want to see.
 
