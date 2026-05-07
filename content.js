@@ -47,11 +47,13 @@ function hideSections() {
     }
   });
 
-  // Hide "Shorts" menu item in sidebar
+  // Hide "Shorts" and "Home" menu items in sidebar (YT logo already links home)
   const guideEntries = document.querySelectorAll('ytd-guide-entry-renderer');
   guideEntries.forEach(entry => {
     const titleElement = entry.querySelector('yt-formatted-string.title');
-    if (titleElement && titleElement.textContent.trim() === 'Shorts') {
+    if (!titleElement) return;
+    const title = titleElement.textContent.trim();
+    if (title === 'Shorts' || title === 'Home') {
       entry.style.display = 'none';
     }
   });

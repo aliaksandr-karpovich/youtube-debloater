@@ -7,7 +7,7 @@ A Chrome extension that declutters YouTube by hiding things you probably don't w
 - Hides the **Shorts** shelf on the subscriptions page
 - Hides the **Most relevant** shelf on the subscriptions page
 - Hides upcoming stream announcements (videos with the **Notify me** button)
-- Hides the **Shorts** entry in the sidebar
+- Hides the **Home** and **Shorts** entries in the sidebar (the YT logo still links home)
 - Redirects channel pages (`/@handle`, `/channel/ID`) straight to the **Videos** tab
 
 ## Install
