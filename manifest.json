@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Subscriptions Cleaner",
+  "version": "1.0",
+  "description": "Hides 'Most Relevant' and 'Shorts' sections from YouTube subscriptions page",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

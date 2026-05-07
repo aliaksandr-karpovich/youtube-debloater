@@ -1,0 +1,9 @@
+/* Hide Shorts sections */
+ytd-reel-shelf-renderer {
+  display: none !important;
+}
+
+/* Hide sections with "Most relevant" title */
+ytd-item-section-renderer:has(#title:is(:contains("Most relevant"))) {
+  display: none !important;
+}
