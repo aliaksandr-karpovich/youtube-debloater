@@ -16,3 +16,7 @@ A Chrome extension that declutters YouTube by hiding things you probably don't w
 2. Open `chrome://extensions` in Chrome (or any Chromium browser).
 3. Enable **Developer mode** (top-right).
 4. Click **Load unpacked** and select this folder.
+
+## License
+
+WTFPL — see [LICENSE](LICENSE).
