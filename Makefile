@@ -2,7 +2,7 @@ NAME    := youtube-subscriptions-cleaner
 VERSION := $(shell jq -r .version manifest.json)
 BUILD   := build
 ZIP     := $(BUILD)/$(NAME)-v$(VERSION).zip
-FILES   := manifest.json content.js styles.css icon48.png icon128.png
+FILES   := manifest.json content.js styles.css popup.html popup.css popup.js icon48.png icon128.png
 
 .PHONY: package clean
 
