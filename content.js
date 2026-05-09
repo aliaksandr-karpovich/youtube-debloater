@@ -29,7 +29,7 @@ function hideSections() {
   const richShelves = document.querySelectorAll('ytd-rich-shelf-renderer');
   richShelves.forEach(shelf => {
     const titleElement = shelf.querySelector('#title');
-    if (titleElement && titleElement.textContent.trim() === 'Most relevant') {
+    if (titleElement?.textContent.trim() === 'Most relevant') {
       shelf.style.display = 'none';
     }
   });
