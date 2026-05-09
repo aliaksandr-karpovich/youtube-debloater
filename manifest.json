@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Subscriptions Cleaner",
+  "name": "YouTube Debloater",
   "version": "1.0",
-  "description": "Hides 'Most Relevant' and 'Shorts' sections from YouTube subscriptions page",
+  "description": "A Chrome extension that declutters YouTube by hiding things you probably don't want to see.",
   "permissions": [],
   "content_scripts": [
     {
