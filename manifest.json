@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "YouTube Debloater",
-  "version": "1.0",
+  "version": "1.1",
   "description": "A Chrome extension that declutters YouTube by hiding things you probably don't want to see.",
   "permissions": ["storage"],
   "content_scripts": [
