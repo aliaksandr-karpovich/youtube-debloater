@@ -4,7 +4,9 @@ BUILD   := build
 ZIP     := $(BUILD)/$(NAME)-v$(VERSION).zip
 FILES   := manifest.json content.js styles.css popup.html popup.css popup.js icon48.png icon128.png
 
-.PHONY: package clean
+.PHONY: rebuild package clean
+
+rebuild: clean package
 
 package: $(ZIP)
 

@@ -1,10 +1,31 @@
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #0f0f0f;
+  --border: #e5e5e5;
+  --slider-bg: #909090;
+  --slider-knob: #ffffff;
+  --accent: #065fd4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f0f0f;
+    --fg: #f1f1f1;
+    --border: #272727;
+    --slider-bg: #3f3f3f;
+    --slider-knob: #f1f1f1;
+    --accent: #3ea6ff;
+  }
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   width: 280px;
   margin: 0;
   padding: 12px 14px;
-  background: #0f0f0f;
-  color: #f1f1f1;
+  background: var(--bg);
+  color: var(--fg);
 }
 
 h1 {
@@ -24,7 +45,7 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 8px 0;
-  border-top: 1px solid #272727;
+  border-top: 1px solid var(--border);
   font-size: 13px;
 }
 
@@ -46,7 +67,7 @@ li:first-child { border-top: none; }
 .slider {
   position: absolute;
   inset: 0;
-  background: #3f3f3f;
+  background: var(--slider-bg);
   border-radius: 18px;
   cursor: pointer;
   transition: background 0.15s;
@@ -59,13 +80,13 @@ li:first-child { border-top: none; }
   height: 14px;
   left: 2px;
   top: 2px;
-  background: #f1f1f1;
+  background: var(--slider-knob);
   border-radius: 50%;
   transition: transform 0.15s;
 }
 
 .switch input:checked + .slider {
-  background: #3ea6ff;
+  background: var(--accent);
 }
 
 .switch input:checked + .slider::before {
